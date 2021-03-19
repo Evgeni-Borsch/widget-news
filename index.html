@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <title>News</title>
+
+</head>
+
+<body>
+    <div id="Header" class="header">
+        <div class="container">
+            <!-- Widjet -->
+            <article class="news" id="news-feed">
+                <div id='stars'></div>
+                <div id="stars1"></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <!-- Header -->
+                <div class="news-header">
+                    <img class="logo" src="logo.svg" alt="logo">
+                    <div id='title'>
+                        <span> NEWS </span>
+                    </div>
+                </div>
+                <!-- content -->
+                <div class="active-review">
+                    <div class="cards" id="cards">
+                        <button id="btn" class="card">
+                            <div class="card_data">
+                                <p class="time" id="time"> Время опубликования статьи </p>
+                            </div>
+                            <div>
+                                <a class="goFull"> Заголовок статьи </a>
+                            </div>
+                        </button>
+                        <button id="btn" class="card">
+                            <div class="card_data">
+                                <p class="time" id="time"> Время опубликования статьи </p>
+                            </div>
+                            <div>
+                                <a class="goFull"> Заголовок статьи </a>
+                            </div>
+                        </button>
+                        <button id="btn" class="card">
+                            <div class="card_data">
+                                <p class="time" id="time"> Время опубликования статьи </p>
+                            </div>
+                            <div>
+                                <a class="goFull"> Заголовок статьи </a>
+                            </div>
+                        </button>
+                        <button id="btn" class="card">
+                            <div class="card_data">
+                                <p class="time" id="time"> Время опубликования статьи </p>
+                            </div>
+                            <div>
+                                <a class="goFull"> Заголовок статьи </a>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="full-card">
+                        <div class="full-card_text">
+                            <a href="#" id="goTitle"> Заголовок статьи из массива </a>
+                        </div>
+                        <div class="full-card_content">
+                            <a class="article" id="goContent"> Текст из массива </a>
+                            <a href="#" class="url-article" id="article1">
+                                <span class="hover_line hover_line--top"></span>
+                                <span class="hover_line hover_line--right"></span>
+                                <span class="hover_line hover_line--bottom"></span>
+                                <span class="hover_line hover_line--left"></span>
+                                Learn more >
+                            </a>
+                        </div>
+                        <div class="full-card_footer">
+                            <p class="source" id="source">Источник</p>
+                            <p class="data">05.12.2020</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0
+}
+:root {
+    --main-color: #B00E23
+}
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    padding: 30px 0 0 0 
+}
+a {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 00;
+    text-decoration: none;
+    color: #ffffff;
+}
+.news {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 300px;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(221, 218, 218, 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 1, 4));
+    background: #000000;;
+}
+
+.news-header {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000000;
+    margin: 10px 185px 0px 180px;
+    padding-bottom: 10px;
+}
+.news-header a {
+    position: absolute;
+    font-weight: 300;
+    left: 42%;
+    text-decoration: none;
+    color: #ffffff;
+}
+.active-review {
+    display: flex;
+    width: 370px;
+    height: 243px;
+}
+.full-card {
+    position: relative;
+    width: 186px;
+    height: 235px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    display: none;
+}
+.full-card_text {
+    position: absolute;
+    text-align: center;
+    width: 186px;
+    padding-top: 5%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+    width: 168px;
+    height: 235px;
+    
+}
+#btn {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.card {
+    display: block;
+    text-align: center;
+    width: 168px;
+    height: 50px;
+    background: #f31b1b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+}
+.card:hover {
+    box-shadow: 0 0 10px var(--main-color), 0 0 40px var(--main-color);
+    transition: 0.5s;
+    transition-delay: 0.01s;
+    color: var(--main-color);
+}
+p {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    color: #d3cece;
+    font-size: 8px;
+}
+.full-card_footer {
+    position: absolute;
+    display: inline-flex;
+    width: 186px;
+    bottom: 5%;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 35%;
+    z-index: -1;
+}   
+.article {
+    display: block;
+    position: absolute;
+    top: 65%;
+    font-size: 10px;
+    width: 175px;
+    left: 5%;
+}
+.url-article {
+    position: absolute;
+    display: inline-block;
+    top: 80%;
+    left: 30%;
+    color: #fff;
+    font-size: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px 5px;
+}
+.card:nth-child(2) {
+    margin-top: 10px;
+}
+.card:nth-child(3) {
+    margin-top: 10px;
+}
+.card:nth-child(4) {
+    margin-top: 14px;
+}
+
+
+/* hover lines */
+
+.hover_line {
+    position: absolute;
+    display: block;
+}
+.hover_line--top {
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 0.6px;
+    background: linear-gradient(90deg, transparent, var(--main-color));
+
+}
+.url-article:hover .hover_line--top {
+    left: 100%;
+    transition: 0.7s;
+    transition-delay: 0.25s;
+}
+
+.hover_line--bottom {
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 0.6px;
+    background: linear-gradient(270deg, transparent, var(--main-color));
+
+}
+.url-article:hover .hover_line--bottom {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.25s;
+}
+
+.hover_line--left {
+    left:0;
+    bottom: -100%;
+    width: 0.6px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, var(--main-color));
+
+}
+.url-article:hover .hover_line--left {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0s;
+}
+
+.hover_line--right {
+    right:0;
+    top: -100%;
+    width: 0.6px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--main-color));
+
+}
+.url-article:hover .hover_line--right {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0s;
+}
+
+.url-article:hover {
+    box-shadow: 0 0 10px var(--main-color), 0 0 40px var(--main-color), 0 0 80px var(--main-color) ;
+    transition: 0.2s;
+    transition-delay: 0.5s;
+    color: var(--main-color);
+}
